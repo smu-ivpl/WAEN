@@ -1,0 +1,76 @@
+#### general settings
+name: WAEN_S_lr4e-4_600k_Vimeo90K
+use_tb_logger: true
+model: video_base
+distortion: sr
+scale: 4
+gpu_ids: [0]
+
+#### datasets
+datasets:
+  train:
+    name: Vimeo90K
+    mode: Vimeo90K
+    interval_list: [1]
+    random_reverse: false
+    border_mode: false
+    dataroot_GT: ../datasets/Vimeo90K/vimeo90k_train_GT.lmdb
+    dataroot_LR: ../datasets/Vimeo90K/vimeo90k_train_LR7frames.lmdb
+    data_type: lmdb
+    cache_keys: ~
+
+    N_frames: 7
+    use_shuffle: true
+    n_workers: 3  # per GPU
+    batch_size: 32
+    scale: 4
+    GT_size: 256
+    LR_size: 64
+    use_flip: true
+    use_rot: true
+    color: RGB
+  val:
+    name: Vid4
+    mode: Vid4
+    dataroot_GT: ../datasets/Vid4/GT
+    dataroot_LR: ../datasets/Vid4/BIx4
+    cache_data: True
+    N_frames: 7
+    padding: new_info
+
+#### network structures
+network:
+  which_model: WAEN-S
+  nframes: 7
+  nf: 128
+  RBs: 10
+
+#### path
+path:
+  pretrain_model: ~
+  strict_load: true
+  resume_state: ~
+
+#### training settings: learning rate scheme, loss
+train:
+  lr: !!float 4e-4
+  lr_scheme: CosineAnnealingLR_Restart
+  beta1: 0.9
+  beta2: 0.99
+  niter: 600000
+  warmup_iter: -1  # -1: no warm up
+  T_period: [50000, 100000, 150000, 150000, 150000]
+  restarts: [50000, 150000, 300000, 450000]
+  restart_weights: [1, 1, 1, 1]
+  eta_min: !!float 1e-7
+
+  pixel_criterion: cb
+  pixel_weight: 1.0
+  val_freq: !!float 2e3
+
+  manual_seed: 0
+
+#### logger
+logger:
+  print_freq: 100
+  save_checkpoint_freq: !!float 2e3
