@@ -9,7 +9,7 @@ import glob
 
 try:
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from data.util import imresize_np
+    from datasets.util import imresize_np
 except ImportError:
     pass
 

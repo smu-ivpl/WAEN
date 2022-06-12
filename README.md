@@ -13,24 +13,24 @@
 
 #### Network Architecture
 <p align="center">
-  <img width="900" src="fig1.PNG">
+  <img width="900" src="./images/fig1.PNG">
 </p>
 
 <p align="center">
-  <img width="900" src="fig3.PNG">
+  <img width="900" src="./images/fig3.PNG">
 </p>
 
 <p align="center">
-  <img width="900" src="fig4.PNG">
+  <img width="900" src="./images/fig4.PNG">
 </p>
 
 #### Experimental Results
 <p align="center">
-  <img width="900" src="table.PNG">
+  <img width="900" src="./images/table.PNG">
 </p>
 
 <p align="center">
-  <img width="900" src="fig5.PNG">
+  <img width="900" src="./images/fig5.PNG">
 </p>
 
 ----------------------------
