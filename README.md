@@ -42,10 +42,12 @@
     conda create --name waen python=3.6
     ```
 - [PyTorch](https://pytorch.org/) (NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads))
+    
     Trained on PyTorch 1.4.0 CUDA 10.0
     ```bash
     conda install pytorch==1.4.0 torchvision cudatoolkit=10.0 -c pytorch
     ```
+    
     Recently (2022-03-29), we constructed the virtual environment as below (PyTorch 1.8.1 CUDA 10.2).
     However, when we tested using the pre-trained model in this environment, we observed that it did not match the results of the original paper.
     Please note this.
