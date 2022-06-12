@@ -66,6 +66,7 @@ We used Vimeo90K dataset for training and Vid4 dataset for testing.
 - Download
 
     Please refer to **[Dataset.md](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution/blob/master/Doc/Dataset.md)** in our **[Deep-Video-Super-Resolution](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution)** repository for more details.
+    
     Put the datasets in ./datasets/
     
 - Prepare for Vimeo90K
