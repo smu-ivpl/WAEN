@@ -1,8 +1,8 @@
 # Wavelet Attention Embedding Networks for Video Super-Resolution
-##### Young-Ju Choi, Young-Woon Lee, and Byung-Gyu Kim
-##### Intelligent Vision Processing Lab. (IVPL), Sookmyung Women's University, Seoul, Republic of Korea
+#### Young-Ju Choi, Young-Woon Lee, and Byung-Gyu Kim
+#### Intelligent Vision Processing Lab. (IVPL), Sookmyung Women's University, Seoul, Republic of Korea
 ----------------------------
-##### This repository is the official PyTorch implementation of the paper published in _2020 25th International Conference on Pattern Recognition (ICPR)_.
+#### This repository is the official PyTorch implementation of the paper published in _2020 25th International Conference on Pattern Recognition (ICPR)_.
 [![paper](https://img.shields.io/badge/paper-PDF-<COLOR>.svg)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9412623)
 
 ----------------------------
@@ -13,24 +13,24 @@
 
 #### Network Architecture
 <p align="center">
-  <img width="800" src="fig1.png">
+  <img width="800" src="fig1.PNG">
 </p>
 
 <p align="center">
-  <img width="800" src="fig2.png">
+  <img width="800" src="fig2.PNG">
 </p>
 
 <p align="center">
-  <img width="800" src="fig3.png">
+  <img width="800" src="fig3.PNG">
 </p>
 
 #### Experimental Results
 <p align="center">
-  <img width="800" src="table.png">
+  <img width="800" src="table.PNG">
 </p>
 
 <p align="center">
-  <img width="800" src="fig5.png">
+  <img width="800" src="fig5.PNG">
 </p>
 
 ----------------------------
