@@ -71,11 +71,26 @@ We used Vimeo90K dataset for training and Vid4 dataset for testing.
     
 - Prepare for Vimeo90K
 
-    TODO
+    Run in ./codes/data_processing_scripts/ 
+    
+    Generate LR data
+    ```bash
+    python generate_LR_Vimeo90K.py
+    ```
+    
+    Generate LMDB
+    ```bash
+    python generate_lmdb_Vimeo90K.py
+    ```
     
 - Prepare for Vid4
 
-    TODO
+    Run in ./codes/data_processing_scripts/ 
+    
+    Generate LR data
+    ```bash
+    python generate_LR_Vid4.py
+    ```
 
 
 #### Model Zoo
