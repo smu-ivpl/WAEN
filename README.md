@@ -36,8 +36,38 @@
 ----------------------------
 ## Getting Started
 #### Dependencies and Installation
+- Anaconda3
+- Python == 3.6
+    ```bash
+    conda create --name waen python=3.6
+    ```
+- [PyTorch](https://pytorch.org/) (NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads))
+    Trained on PyTorch 1.4.0 CUDA 10.0
+    ```bash
+    conda install pytorch==1.4.0 torchvision cudatoolkit=10.0 -c pytorch
+    ```
+    Recently (2022-03-29), we constructed the virtual environment as below (PyTorch 1.8.1 CUDA 10.2).
+    However, when we tested using the pre-trained model in this environment, we observed that it did not match the results of the original paper.
+    Please note this.
+    For your information, we attatched the testing log files in **[Model Zoo](#Model-Zoo)** section.
+    ```bash
+    conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch
+    ```
+- tqdm, pyyaml, tensorboard, opencv-python, lmdb
+    ```bash
+    conda install -c conda-forge tqdm pyyaml tensorboard
+    pip install opencv-python
+    pip install lmdb
+    ```
+
 #### Dataset Preparation
+We used Vimeo90K dataset for training and Vid4 dataset for testing.
+Please refer to **[Dataset.md](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution/blob/master/Doc/Dataset.md)** in our **[Deep-Video-Super-Resolution](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution)** repository for more details.
+
 #### Model Zoo
+Pre-trained models and testing log files are available in below link.
+[![google-drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1Zo-KGRbgvEB10oKv1u4gZaDxGkJuJFPC?usp=sharing)
+
 
 ----------------------------
 ## Training
