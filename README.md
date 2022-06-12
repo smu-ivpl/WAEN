@@ -64,11 +64,16 @@
 #### Dataset Preparation
 We used Vimeo90K dataset for training and Vid4 dataset for testing.
 - Download
+
     Please refer to **[Dataset.md](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution/blob/master/Doc/Dataset.md)** in our **[Deep-Video-Super-Resolution](https://github.com/YounggjuuChoi/Deep-Video-Super-Resolution)** repository for more details.
     Put the datasets in ./datasets/
+    
 - Prepare for Vimeo90K
+
     TODO
+    
 - Prepare for Vid4
+
     TODO
 
 
@@ -82,6 +87,7 @@ Pre-trained models and testing log files are available in below link.
 ## Training
 Run in ./codes/
 - WAEN P
+
     Using single GPU
     ```bash
     python train.py -opt options/train/train_WAEN_P.yml
@@ -94,7 +100,9 @@ Run in ./codes/
     ```bash
     python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 train.py -opt options/train/train_WAEN_P.yml --launcher pytorch
     ```
+    
 - WAEN S
+
     Using single GPU
     ```bash
     python train.py -opt options/train/train_WAEN_S.yml
@@ -112,9 +120,9 @@ Run in ./codes/
 ## Testing
 Run in ./codes/
 
-    ```bash
-    python test_Vid4.py
-    ```
+```bash
+python test_Vid4.py
+```
     
 ----------------------------
 ## Citation
