@@ -111,7 +111,7 @@ Run in ./codes/
     Using multiple GPUs (nproc_per_node means the number of GPUs)
     with setting CUDA_VISIBLE_DEVICES in .yml file
     
-    For example, set CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 for 8 GPUs 
+    For example, set 'gpu_ids: [0,1,2,3,4,5,6,7]' in .yml file for 8 GPUs 
     
     ```bash
     python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 train.py -opt options/train/train_WAEN_P.yml --launcher pytorch
@@ -126,7 +126,7 @@ Run in ./codes/
     Using multiple GPUs (nproc_per_node means the number of GPUs)
     with setting CUDA_VISIBLE_DEVICES in .yml file
     
-    For example, set CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 for 8 GPUs
+    For example, set 'gpu_ids: [0,1,2,3,4,5,6,7]' in .yml file for 8 GPUs 
     
     ```bash
     python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 train.py -opt options/train/train_WAEN_S.yml --launcher pytorch
