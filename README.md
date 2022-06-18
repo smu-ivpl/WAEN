@@ -157,4 +157,6 @@ python test_Vid4.py
 ## Acknowledgement
 The codes are heavily based on [EDVR](https://github.com/xinntao/EDVR). Thanks for their awesome works.
 
-
+```bash
+EDVR : Wang, Xintao, et al. "Edvr: Video restoration with enhanced deformable convolutional networks." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. 2019.
+```
